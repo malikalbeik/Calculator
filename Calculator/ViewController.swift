@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             userIsInTheMiddleOfTyping = false
         }
         if let mathematicalSymbol = sender.currentTitle {
-            Brain.performOperations(mathematicalSymbol)
+            Brain.performOperation(mathematicalSymbol)
         }
         if let result = Brain.result{
             displayValue = result
